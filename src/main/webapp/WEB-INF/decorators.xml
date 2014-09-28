@@ -1,0 +1,17 @@
+<decorators defaultdir="/decorators">
+    <excludes>
+        <pattern>/40*.jsp</pattern>
+        <pattern>/*ajax=true*</pattern>
+        <pattern>/struts/*</pattern>
+        <pattern>/resources/*</pattern>
+    </excludes> 
+    
+    <decorator name="default_no_menu" page="default2.jsp">
+        <pattern>/viewPatient*</pattern>
+    </decorator>
+    
+    <decorator name="default" page="default.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+
+</decorators>

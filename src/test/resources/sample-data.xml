@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="app_user">
+        <column>id</column>
+        <column>username</column>
+        <column>password</column>
+        <column>first_name</column>
+        <column>last_name</column>
+        <column>address</column>
+        <column>city</column>
+        <column>country</column>
+        <column>email</column>
+        <column>phone_number</column>
+        <column>postal_code</column>
+        <column>province</column>
+        <column>website</column>
+        <column>password_hint</column>
+        <column>version</column>
+        <column>account_enabled</column>
+        <column>account_expired</column>
+        <column>account_locked</column>
+        <column>credentials_expired</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="username">user</value>
+            <value description="password">$2a$10$CnQVJ9bsWBjMpeSKrrdDEeuIptZxXrwtI6CZ/OgtNxhIgpKxXeT9y</value>
+            <value description="first_name">Daniel</value>
+            <value description="last_name">McCloskey</value>
+            <value description="address">222 Copland Cres</value>
+            <value description="city">Regina</value>
+            <value description="country">CA</value>
+            <value description="email">matt_raible@yahoo.com</value>
+            <value description="phone_number"></value>
+            <value description="postal_code">R5F4D6</value>
+            <value description="province">SK</value>
+            <value description="website">http://tomcat.apache.org</value>
+            <value description="password_hint"><![CDATA[A male kitty.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="username">admin</value>
+            <value description="password">$2a$10$bH/ssqW8OhkTlIso9/yakubYODUOmh.6m5HEJvcBq3t3VdBh7ebqO</value>
+            <value description="first_name">Lance</value>
+            <value description="last_name">Pitka</value>
+            <value description="address">100 22St E</value>
+            <value description="city">Saskatoon</value>
+            <value description="country">SK</value>
+            <value description="email">matt@raibledesigns.com</value>
+            <value description="phone_number"></value>
+            <value description="postal_code">S7D5E5</value>
+            <value description="province">SK</value>
+            <value description="website">http://raibledesigns.com</value>
+            <value description="password_hint"><![CDATA[Not a female kitty.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+        </row>
+        <row>
+            <value description="id">-3</value>
+            <value description="username">two_roles_user</value>
+            <value description="password">$2a$10$bH/ssqW8OhkTlIso9/yakubYODUOmh.6m5HEJvcBq3t3VdBh7ebqO</value>
+            <value description="first_name">Sharif</value>
+            <value description="last_name">Uddin</value>
+            <value description="address">435 Haight Crescent</value>
+            <value description="city">Saskatoon</value>
+            <value description="country">CA</value>
+            <value description="email">two_roles_user@appfuse.org</value>
+            <value description="phone_number"></value>
+            <value description="postal_code">S7H5C3</value>
+            <value description="province">SK</value>
+            <value description="website">http://raibledesigns.com</value>
+            <value description="password_hint"><![CDATA[Not a female kitty.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+        </row>        
+    </table>
+    <table name="role">
+        <column>id</column>
+        <column>name</column>
+        <column>description</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="name">ROLE_ADMIN</value>
+            <value description="description"><![CDATA[Administrator role (can edit Users)]]></value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="name">ROLE_USER</value>
+            <value description="description"><![CDATA[Default role for all Users]]></value>
+        </row>
+    </table>
+    <table name="user_role">
+        <column>user_id</column>
+        <column>role_id</column>
+        <row>
+            <value description="user_id">-1</value>
+            <value description="role_id">-2</value>
+        </row>
+        <row>
+            <value description="user_id">-2</value>
+            <value description="role_id">-1</value>
+        </row>
+        <row>
+            <value description="user_id">-3</value>
+            <value description="role_id">-1</value>
+        </row>
+        <row>
+            <value description="user_id">-3</value>
+            <value description="role_id">-2</value>
+        </row>
+    </table>
+    
+    
+    <table name="patient">
+	    <column>patientId</column>
+		<column>user_id</column>
+		<column>gender</column>
+		<column>dob</column>
+		<column>bloodGroup</column>
+		<column>healthCardNumber</column>
+	    <column>emergencyContactName</column>
+	    <column>emergencyContactPhone</column>
+	    <column>allergies</column>
+	    <column>medicalCondition</column>    
+	    <column>bioId</column>
+	    <column>organDonorStatus</column>    
+    	<column>nextToKinContactNumber</column>  
+   		<column>nextToKin</column>
+    	<column>legalProxies</column> 
+    	<column>legalProxiesContactNumber</column> 
+	    
+    	<row>
+	        <value description="patientId">1</value>
+			<value description="user_id">-1</value>
+			<value description="gender">Male</value>
+			<value description="dob">12/05/1988</value>
+			<value description="bloodGroup">O+</value>
+			<value description="healthCardNumber">234-555-232</value>
+		    <value description="emergencyContactName">Joe Bar</value>
+		    <value description="emergencyContactPhone">306-665-3435</value>
+		   	<value description="allergies">Beta Blockers, BP Med (Lasix)</value>
+		   	<value description="medicalCondition">Visual Problem, Kidney Transplant, Past Cancer</value>    
+		   	<value description="bioId">1</value>
+		   	
+		   	<value description="organDonorStatus">0</value> 
+    		<value description="nextToKinContactNumber">234-456-4546</value>  
+   			<value description="nextToKin">Christopher Giede </value> 
+    		<value description="legalProxies">Carolyn Duval</value> 
+    		<value description="legalProxiesContactNumber">675-345-4566</value>  
+		   	
+        </row>
+        <row>
+	        <value description="patientId">2</value>
+			<value description="user_id">-2</value>
+			<value description="gender">Male</value>
+			<value description="dob">05/01/1985</value>
+			<value description="bloodGroup">AB+</value>
+			<value description="healthCardNumber">456-222-783</value>
+		    <value description="emergencyContactName">Foo Bar</value>
+		    <value description="emergencyContactPhone">306-443-2353</value>
+		   	<value description="allergies">Pain Meds (Morphin)</value>
+		   	<value description="medicalCondition">Cardiovascular Problem, Mental Health Issue, High Blood Pressure</value>    
+		   	<value description="bioId">2</value>
+		   	
+		   	<value description="organDonorStatus">1</value> 
+    		<value description="nextToKinContactNumber">305-454-4567</value>  
+   			<value description="nextToKin">Clint McDonald </value> 
+    		<value description="legalProxies">Terry Walker</value> 
+    		<value description="legalProxiesContactNumber">345-132-5667</value> 
+        </row>
+        <row>
+	        <value description="patientId">3</value>
+			<value description="user_id">-3</value>
+			<value description="gender">Male</value>
+			<value description="dob">05/01/1985</value>
+			<value description="bloodGroup">B+</value>
+			<value description="healthCardNumber">123-345-783</value>
+		    <value description="emergencyContactName">Samiul Urmi</value>
+		    <value description="emergencyContactPhone">306-567-0945</value>
+		   	<value description="allergies">aspirin, acetaminophen</value>
+		   	<value description="medicalCondition">Hearing Problem, Heart Surgery, Diabetes</value>    
+		   	<value description="bioId">3</value>
+		   	
+		   	<value description="organDonorStatus">0</value> 
+    		<value description="nextToKinContactNumber">344-455-5667</value>  
+   			<value description="nextToKin">Cynthia Nave </value> 
+    		<value description="legalProxies">Ivan Jen</value> 
+    		<value description="legalProxiesContactNumber">234-465-3545</value> 
+        </row>
+    </table>
+    
+</dataset>
